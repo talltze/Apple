@@ -1,143 +1,188 @@
-#Apple 直连
-USER-AGENT,*com.apple.mobileme.fmip1
-# Weather
-USER-AGENT,*WeatherFoundation*
-DOMAIN,weather-data.apple.com
-# Map
-USER-AGENT,com.apple.Maps
-USER-AGENT,*com.apple.Maps?
-USER-AGENT,Maps*
-DOMAIN,gs-loc-cn.apple.com
-## FindMy
-USER-AGENT,FindMyFriends*
-USER-AGENT,FindMyiPhone*
-USER-AGENT,*FindMyiPhone?
-USER-AGENT,FMDClient*
-USER-AGENT,FMFD*
-USER-AGENT,fmflocatord*
-USER-AGENT,geod*
-USER-AGENT,locationd*
-DOMAIN,fmfmobile.icloud.com
-DOMAIN,fmipmobile.icloud.com
-DOMAIN,statici.icloud.com
-
-# Apple List
-IP-CIDR,17.0.0.0/8,no-resolve
-IP-CIDR,63.92.224.0/19,no-resolve
-IP-CIDR,65.199.22.0/23,no-resolve
-IP-CIDR,139.178.128.0/18,no-resolve
-IP-CIDR,144.178.0.0/19,no-resolve
-IP-CIDR,144.178.36.0/22,no-resolve
-IP-CIDR,192.35.50.0/24,no-resolve
-IP-CIDR,198.183.17.0/24,no-resolve
-IP-CIDR,205.180.175.0/24,no-resolve
-DOMAIN-SUFFIX,apple.com
-DOMAIN-SUFFIX,apple.co
-DOMAIN-SUFFIX,apple.com.cn
-DOMAIN-SUFFIX,cdn-apple.com
-DOMAIN-SUFFIX,cdn.apple.com
-DOMAIN-SUFFIX,cdn-apple-mapkit.com
-DOMAIN-SUFFIX,cdn.apple-mapkit.com
-DOMAIN-SUFFIX,apple-cloudkit.com
-DOMAIN-SUFFIX,aaplimg.com
-DOMAIN-SUFFIX,icloud.com
-DOMAIN-SUFFIX,gateway.icloud.com
-DOMAIN-SUFFIX,xp.apple.com
-DOMAIN-SUFFIX,icloud.com.cn
-DOMAIN-SUFFIX,icloud-content.com
-DOMAIN-SUFFIX,me.com
-DOMAIN-SUFFIX,play.itunes.apple.com
-DOMAIN-SUFFIX,bag.itunes.apple.com
-DOMAIN-SUFFIX,inappcheck.itunes.apple.com
-DOMAIN-SUFFIX,mzstatic.com
-DOMAIN-SUFFIX,apple.com.akadns.net
-DOMAIN-SUFFIX,icloud.com.akadns.net
-DOMAIN-SUFFIX,ess.apple.com
-# AppleMusic
-DOMAIN-SUFFIX,music.apple.com
-DOMAIN-SUFFIX,aod.itunes.apple.com
-DOMAIN-SUFFIX,audio.itunes.apple.com
-DOMAIN-SUFFIX,play.itunes.apple.com
-DOMAIN-SUFFIX,radio-activity.itunes.apple.com
-DOMAIN-SUFFIX,radio-services.itunes.apple.com
-DOMAIN-SUFFIX,radio.itunes.apple.com
-DOMAIN-SUFFIX,streamingaudio.itunes.apple.com
-DOMAIN-SUFFIX,audio-ssl.itunes.apple.com
-DOMAIN-SUFFIX,audio.itunes.apple.com
-DOMAIN-SUFFIX,mvod.itunes.apple.com
-DOMAIN-SUFFIX,streamingaudio.itunes.apple.com
-# DOMAIN-SUFFIX,blobstore.apple.com
-USER-AGENT,*Music?
-# AppStore
-DOMAIN,apps.apple.com
-DOMAIN,itunes.apple.com
-
-# iMessage
-DOMAIN-SUFFIX,ess.apple.com
-# Apple Music
-DOMAIN-SUFFIX,music.apple.com
-DOMAIN-SUFFIX,sonos-music.apple.com
-# Configuration
-DOMAIN,configuration.apple.com
-# Others
-DOMAIN-SUFFIX,aaplimg.com
-DOMAIN-SUFFIX,apple.co
-DOMAIN-SUFFIX,itunes.com
-DOMAIN-SUFFIX,itunes.apple.com
-DOMAIN-SUFFIX,edge-itunes-apple.com.akadns.net
-DOMAIN-SUFFIX,apple
-DOMAIN,weather-analytics-events.apple.com
-# iCloud 上传和下载
-DOMAIN-SUFFIX,icloud-content.com
-DOMAIN-SUFFIX,me.com
-DOMAIN-SUFFIX,apple.com
-DOMAIN-SUFFIX,icloud.com
-DOMAIN-SUFFIX,apple-cloudkit.com
-
-# Apple 其他直连
+#########################################
+# Sukka's Ruleset - Apple CDN
+# Last Updated: 2024-08-27T00:02:56.131Z
+# Size: 173
+# License: AGPL 3.0
+# Homepage: https://ruleset.skk.moe
+# GitHub: https://github.com/SukkaW/Surge
 #
-# Spotlight
-DOMAIN,api.smoot.apple.cn
-# Hotspot captive
-DOMAIN,captive.apple.com
-# Apple Pay
-DOMAIN,smp-device-content.apple.com
-DOMAIN-KEYWORD,smp-device
-USER-AGENT,passd*
-USER-AGENT,Wallet*
-# locationd
-DOMAIN,gs-loc.apple.com
-DOMAIN-SUFFIX,ls.apple.com.akadns.net
-DOMAIN-SUFFIX,ls.apple.com.edgesuite.net
-# Reserve
-DOMAIN,reserve-prime.apple.com
-# Push
-DOMAIN-KEYWORD,push-apple.com.akadns.net
-DOMAIN-SUFFIX,push.apple.com.akadns.net
-DOMAIN-SUFFIX,push.apple.com
-# GeoServices.framework
-DOMAIN-SUFFIX,ls.apple.com
-# Asset Cache Locator Service
-DOMAIN-SUFFIX,lcdn-locator.apple.com
-# Caching Server Registration
-DOMAIN-SUFFIX,lcdn-registration.apple.com
-# SystemOTA
-;DOMAIN,ns.itunes.apple.com,SystemOTA
-;DOMAIN,updates-http.cdn-apple.com,SystemOTA
-;DOMAIN,updates.cdn-apple.com,SystemOTA
-;DOMAIN,xp.apple.com,SystemOTA
-;DOMAIN-SUFFIX,appldnld-lb.apple.com.akadns.net,SystemOTA
-;DOMAIN-SUFFIX,appldnld.apple.com,SystemOTA
-;DOMAIN-SUFFIX,appldnld.apple.com.akadns.net,SystemOTA
-;DOMAIN-SUFFIX,appldnld.g.aaplimg.com,SystemOTA
-;DOMAIN-SUFFIX,gdmf.apple.com,SystemOTA
-;DOMAIN-SUFFIX,gdmf.apple.com.akadns.net,SystemOTA
-;DOMAIN-SUFFIX,mesu-cdn.apple.com.akadns.net,SystemOTA
-;DOMAIN-SUFFIX,mesu-cdn.origin-apple.com.akadns.net,SystemOTA
-;DOMAIN-SUFFIX,mesu.apple.com,SystemOTA
-;DOMAIN-SUFFIX,mesu.g.aaplimg.com,SystemOTA
-;DOMAIN-SUFFIX,ocsp-lb.apple.com.akadns.net,SystemOTA
-;DOMAIN-SUFFIX,ocsp.apple.com,SystemOTA
-;DOMAIN-SUFFIX,ocsp.g.aaplimg.com,SystemOTA
-# 获取经纬度
-DOMAIN-SUFFIX,dispatcher.is.autonavi.com
+# This file contains Apple's domains using their China mainland CDN servers.
+#
+# Data from:
+#  - https://github.com/felixonmars/dnsmasq-china-list
+#########################################
+DOMAIN,this_ruleset_is_made_by_sukkaw.ruleset.skk.moe
+DOMAIN-SUFFIX,p31-imap.mail.me.com
+DOMAIN-SUFFIX,a1.mzstatic.com
+DOMAIN-SUFFIX,a2.mzstatic.com
+DOMAIN-SUFFIX,a3.mzstatic.com
+DOMAIN-SUFFIX,a4.mzstatic.com
+DOMAIN-SUFFIX,a5.mzstatic.com
+DOMAIN-SUFFIX,adcdownload.apple.com.akadns.net
+DOMAIN-SUFFIX,adcdownload.apple.com
+DOMAIN-SUFFIX,amp-api.media.apple.com
+DOMAIN-SUFFIX,amp-api-updates.apps.apple.com
+DOMAIN-SUFFIX,api-p-ap-c.smoot.apple.com
+DOMAIN-SUFFIX,api-p-ap-d.smoot.apple.com
+DOMAIN-SUFFIX,api-p-ap-e.smoot.apple.com
+DOMAIN-SUFFIX,app-site-association.cdn-apple.com
+DOMAIN-SUFFIX,appldnld.apple.com
+DOMAIN-SUFFIX,appldnld.g.aaplimg.com
+DOMAIN-SUFFIX,appleid.cdn-apple.com
+DOMAIN-SUFFIX,apps.apple.com
+DOMAIN-SUFFIX,apps.mzstatic.com
+DOMAIN-SUFFIX,bag-cdn.itunes-apple.com.akadns.net
+DOMAIN-SUFFIX,cdn-cn1.apple-mapkit.com
+DOMAIN-SUFFIX,cdn-cn2.apple-mapkit.com
+DOMAIN-SUFFIX,cdn-cn3.apple-mapkit.com
+DOMAIN-SUFFIX,cdn-cn4.apple-mapkit.com
+DOMAIN-SUFFIX,cdn.apple-mapkit.com
+DOMAIN-SUFFIX,cdn1.apple-mapkit.com
+DOMAIN-SUFFIX,cdn2.apple-mapkit.com
+DOMAIN-SUFFIX,cdn3.apple-mapkit.com
+DOMAIN-SUFFIX,cdn4.apple-mapkit.com
+DOMAIN-SUFFIX,cds-cdn.v.aaplimg.com
+DOMAIN-SUFFIX,cds.apple.com.akadns.net
+DOMAIN-SUFFIX,cds.apple.com
+DOMAIN-SUFFIX,cdsassets.apple.com
+DOMAIN-SUFFIX,cl1-cdn.origin-apple.com.akadns.net
+DOMAIN-SUFFIX,cl1.apple.com
+DOMAIN-SUFFIX,cl2-cn.apple.com
+DOMAIN-SUFFIX,cl2.apple.com
+DOMAIN-SUFFIX,cl3-cdn.origin-apple.com.akadns.net
+DOMAIN-SUFFIX,cl3.apple.com
+DOMAIN-SUFFIX,cl4-cdn.origin-apple.com.akadns.net
+DOMAIN-SUFFIX,cl4-cn.apple.com
+DOMAIN-SUFFIX,cl4.apple.com
+DOMAIN-SUFFIX,cl5-cdn.origin-apple.com.akadns.net
+DOMAIN-SUFFIX,cl5.apple.com
+DOMAIN-SUFFIX,clientflow.apple.com.akadns.net
+DOMAIN-SUFFIX,clientflow.apple.com
+DOMAIN-SUFFIX,cn-smp-paymentservices.apple.com
+DOMAIN-SUFFIX,configuration.apple.com.akadns.net
+DOMAIN-SUFFIX,configuration.apple.com
+DOMAIN-SUFFIX,crl.apple.com
+DOMAIN-SUFFIX,cstat.apple.com
+DOMAIN-SUFFIX,cstat.cdn-apple.com
+DOMAIN-SUFFIX,dd-cdn.origin-apple.com.akadns.net
+DOMAIN-SUFFIX,dejavu.apple.com
+DOMAIN-SUFFIX,download.developer.apple.com
+DOMAIN-SUFFIX,experiments.apple.com
+DOMAIN-SUFFIX,gs-loc-cn.apple.com
+DOMAIN-SUFFIX,gs-loc.apple.com
+DOMAIN-SUFFIX,gsp10-ssl-cn.ls.apple.com
+DOMAIN-SUFFIX,gsp12-cn.ls.apple.com
+DOMAIN-SUFFIX,gsp13-cn.ls.apple.com
+DOMAIN-SUFFIX,gsp4-cn.ls.apple.com.edgekey.net.globalredir.akadns.net
+DOMAIN-SUFFIX,gsp4-cn.ls.apple.com.edgekey.net
+DOMAIN-SUFFIX,gsp4-cn.ls.apple.com
+DOMAIN-SUFFIX,gsp5-cn.ls.apple.com
+DOMAIN-SUFFIX,gsp85-cn-ssl.ls.apple.com
+DOMAIN-SUFFIX,gspe19-2-cn-ssl.ls.apple.com
+DOMAIN-SUFFIX,gspe19-2-cn-ssl.ls-apple.com.akadns.net
+DOMAIN-SUFFIX,gspe19-cn-ssl.ls.apple.com
+DOMAIN-SUFFIX,gspe19-cn.ls-apple.com.akadns.net
+DOMAIN-SUFFIX,gspe19-cn.ls.apple.com
+DOMAIN-SUFFIX,gspe21-ssl.ls.apple.com
+DOMAIN-SUFFIX,gspe21.ls.apple.com
+DOMAIN-SUFFIX,gspe35-ssl.ls.apple.com
+DOMAIN-SUFFIX,gspe79-cn-ssl.ls.apple.com
+DOMAIN-SUFFIX,guzzoni-apple-com.v.aaplimg.com
+DOMAIN-SUFFIX,guzzoni.apple.com
+DOMAIN-SUFFIX,guzzoni.smoot.apple.com
+DOMAIN-SUFFIX,iadsdk.apple.com
+DOMAIN-SUFFIX,icloud-cdn.icloud.com.akadns.net
+DOMAIN-SUFFIX,icloud.cdn-apple.com
+DOMAIN-SUFFIX,images.apple.com.akadns.net
+DOMAIN-SUFFIX,images.apple.com.edgekey.net.globalredir.akadns.net
+DOMAIN-SUFFIX,images.apple.com
+DOMAIN-SUFFIX,init-kt.apple.com
+DOMAIN-SUFFIX,init-p01md-lb.push-apple.com.akadns.net
+DOMAIN-SUFFIX,init-p01md.apple.com
+DOMAIN-SUFFIX,init-p01st-lb.push-apple.com.akadns.net
+DOMAIN-SUFFIX,init-p01st.push.apple.com
+DOMAIN-SUFFIX,init-s01st-lb.push-apple.com.akadns.net
+DOMAIN-SUFFIX,init-s01st.push.apple.com
+DOMAIN-SUFFIX,init.ess.apple.com
+DOMAIN-SUFFIX,iosapps.itunes.g.aaplimg.com
+DOMAIN-SUFFIX,ipcdn.apple.com
+DOMAIN-SUFFIX,iphone-ld.apple.com
+DOMAIN-SUFFIX,iphone-ld.origin-apple.com.akadns.net
+DOMAIN-SUFFIX,is1-ssl.mzstatic.com
+DOMAIN-SUFFIX,is1.mzstatic.com
+DOMAIN-SUFFIX,is2-ssl.mzstatic.com
+DOMAIN-SUFFIX,is2.mzstatic.com
+DOMAIN-SUFFIX,is3-ssl.mzstatic.com
+DOMAIN-SUFFIX,is3.mzstatic.com
+DOMAIN-SUFFIX,is4-ssl.mzstatic.com
+DOMAIN-SUFFIX,is4.mzstatic.com
+DOMAIN-SUFFIX,is5-ssl.mzstatic.com
+DOMAIN-SUFFIX,is5.mzstatic.com
+DOMAIN-SUFFIX,is-ssl.mzstatic.com-cn-lb.itunes-apple.com.akadns.net
+DOMAIN-SUFFIX,itunes-apple.com.akadns.net
+DOMAIN-SUFFIX,itunes.apple.com
+DOMAIN-SUFFIX,itunesconnect.apple.com
+DOMAIN-SUFFIX,mesu-cdn.apple.com.akadns.net
+DOMAIN-SUFFIX,mesu-china.apple.com.akadns.net
+DOMAIN-SUFFIX,mesu.apple.com
+DOMAIN-SUFFIX,ml.cdn-apple.com
+DOMAIN-SUFFIX,music.apple.com
+DOMAIN-SUFFIX,ocsp-lb.apple.com.akadns.net
+DOMAIN-SUFFIX,ocsp2-lb.apple.com.akadns.net
+DOMAIN-SUFFIX,ocsp.apple.com
+DOMAIN-SUFFIX,ocsp2.apple.com
+DOMAIN-SUFFIX,oscdn.apple.com
+DOMAIN-SUFFIX,oscdn.origin-apple.com.akadns.net
+DOMAIN-SUFFIX,osxapps.itunes.g.aaplimg.com
+DOMAIN-SUFFIX,pancake.apple.com
+DOMAIN-SUFFIX,pancake.cdn-apple.com.akadns.net
+DOMAIN-SUFFIX,pba0.apple.com
+DOMAIN-SUFFIX,probe.siri.apple.com
+DOMAIN-SUFFIX,prod-support.apple-support.akadns.net
+DOMAIN-SUFFIX,publicassets.cdn-apple.com
+DOMAIN-SUFFIX,reserve-prime.apple.com
+DOMAIN-SUFFIX,s.mzstatic.com
+DOMAIN-SUFFIX,seed-sequoia.siri.apple.com
+DOMAIN-SUFFIX,seed-swallow.siri.apple.com
+DOMAIN-SUFFIX,seed.siri.apple.com
+DOMAIN-SUFFIX,sequoia.apple.com
+DOMAIN-SUFFIX,sh-pod2-smp-device.apple.com
+DOMAIN-SUFFIX,shazam-insights.cdn-apple.com
+DOMAIN-SUFFIX,smp-device-content.apple.com
+DOMAIN-SUFFIX,static.gc.apple.com
+DOMAIN-SUFFIX,stocks-sparkline-lb.apple.com.akadns.net
+DOMAIN-SUFFIX,stocks-sparkline.apple.com
+DOMAIN-SUFFIX,store.apple.com.edgekey.net.globalredir.akadns.net
+DOMAIN-SUFFIX,store.apple.com.edgekey.net
+DOMAIN-SUFFIX,store.apple.com
+DOMAIN-SUFFIX,store.storeimages.apple.com.akadns.net
+DOMAIN-SUFFIX,store.storeimages.cdn-apple.com
+DOMAIN-SUFFIX,support-china.apple-support.akadns.net
+DOMAIN-SUFFIX,support.apple.com
+DOMAIN-SUFFIX,swallow-apple-com.v.aaplimg.com
+DOMAIN-SUFFIX,swallow.apple.com
+DOMAIN-SUFFIX,swcatalog-cdn.apple.com.akadns.net
+DOMAIN-SUFFIX,swcatalog.apple.com
+DOMAIN-SUFFIX,swcdn.apple.com
+DOMAIN-SUFFIX,swcdn.g.aaplimg.com
+DOMAIN-SUFFIX,swdist.apple.com.akadns.net
+DOMAIN-SUFFIX,swdist.apple.com
+DOMAIN-SUFFIX,swscan-cdn.apple.com.akadns.net
+DOMAIN-SUFFIX,swscan.apple.com
+DOMAIN-SUFFIX,sylvan.apple.com
+DOMAIN-SUFFIX,tj-pod1-smp-device.apple.com
+DOMAIN-SUFFIX,updates-http.cdn-apple.com.akadns.net
+DOMAIN-SUFFIX,updates-http.cdn-apple.com
+DOMAIN-SUFFIX,updates.cdn-apple.com
+DOMAIN-SUFFIX,valid.apple.com
+DOMAIN-SUFFIX,valid.origin-apple.com.akadns.net
+DOMAIN-SUFFIX,weather-data.apple.com.akadns.net
+DOMAIN-SUFFIX,weather-data.apple.com
+DOMAIN-SUFFIX,weather-map.apple.com
+DOMAIN-SUFFIX,weather-map2.apple.com
+DOMAIN-SUFFIX,weatherkit.apple.com
+DOMAIN-SUFFIX,www.apple.com.edgekey.net.globalredir.akadns.net
+DOMAIN-SUFFIX,www.apple.com.edgekey.net
+DOMAIN-SUFFIX,www.apple.com
+DOMAIN-SUFFIX,xp.apple.com
+################## EOF ##################
