@@ -49,7 +49,6 @@ DOMAIN-SUFFIX,me.com
 DOMAIN-SUFFIX,play.itunes.apple.com
 DOMAIN-SUFFIX,bag.itunes.apple.com
 DOMAIN-SUFFIX,inappcheck.itunes.apple.com
-DOMAIN-SUFFIX,mzstatic.com
 DOMAIN-SUFFIX,apple.com.akadns.net
 DOMAIN-SUFFIX,icloud.com.akadns.net
 DOMAIN-SUFFIX,ess.apple.com
@@ -96,8 +95,6 @@ DOMAIN-SUFFIX,apple-cloudkit.com
 
 # Apple 其他直连
 #
-# Spotlight
-DOMAIN,api.smoot.apple.cn
 # Hotspot captive
 DOMAIN,captive.apple.com
 # Apple Pay
