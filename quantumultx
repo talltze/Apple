@@ -1,10 +1,10 @@
-HOST-KEYWORD,apple-support.akadns.net
-HOST-KEYWORD,apple.com.akadns.net
-HOST-KEYWORD,apple.com.edgekey.net
-HOST-KEYWORD,buy.itunes.apple.com
-HOST-KEYWORD,smp-device
-HOST-KEYWORD,testflight
-HOST-KEYWORD,icloud.com.akadns.net
+HOST-SUFFIX,apple-support.akadns.net
+HOST-SUFFIX,apple.com.akadns.net
+HOST-SUFFIX,apple.com.edgekey.net
+HOST-SUFFIX,buy.itunes.apple.com
+HOST-SUFFIX,smp-device
+HOST-SUFFIX,testflight
+HOST-SUFFIX,icloud.com.akadns.net
 
 USER-AGENT,*FindMyiPhone?
 USER-AGENT,*Music?
